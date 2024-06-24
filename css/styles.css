@@ -45,6 +45,10 @@ button {
   cursor: pointer;
 }
 
+img {
+  display: block;
+}
+
 /* #Container and section*/
 .container {
   max-width: 1158px;
@@ -53,14 +57,17 @@ button {
 }
 
 .section {
-  padding-top: 120px;
-  padding-bottom: 120px;
+  padding: 188px 0;
 }
 
 /* #region Page-header*/
 .page-header > .container {
   display: flex;
   align-items: center;
+}
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc;
 }
 
 /* #region Navigation*/
@@ -141,6 +148,7 @@ button {
   font-size: 56px;
   line-height: 1.07;
   letter-spacing: 0.02em;
+  max-width: 496px;
 }
 .order-button {
   color: #fff;
@@ -149,30 +157,47 @@ button {
   font-weight: 500;
   font-size: 16px;
   letter-spacing: 0.04em;
+  display: block;
+  margin: auto;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  border-radius: 4px;
 }
+
 .order-button:hover,
 .order-button:focus {
   background-color: #404bbf;
 }
-/* #region Features*/
 
+/* #region Features*/
 .features {
   font-weight: 500;
   letter-spacing: 0.02em;
 }
+
+.features-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .features-items {
   color: #2e2f42;
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 0.02em;
   line-height: 1.2;
+  margin-bottom: 8px;
 }
+
 .features-text {
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 /* #region Our-team*/
 .section-team {
   background-color: #f4f4fd;
@@ -188,6 +213,12 @@ button {
   text-transform: capitalize;
 }
 
+.team-list {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
 .team-item {
   background-color: #ffffff;
 }
@@ -199,6 +230,7 @@ button {
   font-size: 20px;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 72px;
 }
 
 .team-profession {
