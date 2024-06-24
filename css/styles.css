@@ -1,50 +1,93 @@
 :root {
   --white-color: #f4f4fd;
 }
+
 header {
   color: #2e2f42;
 }
+
 body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   background-color: #fff;
   color: #434455;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding-left: 0;
 }
+
 address {
   font-style: normal;
 }
+
 a {
   color: currentColor;
   text-decoration: none;
 }
+
 button {
   font-family: inherit;
   color: currentColor;
   cursor: pointer;
 }
+
 /* #Container*/
 .container {
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
-  outline: 2px solid red;
 }
+
+/* #region Page-header*/
+.page-header > .container {
+  display: flex;
+  align-items: center;
+}
+
 /* #region Navigation*/
+.nav {
+  display: flex;
+  align-items: center;
+}
+
 .nav-item {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+.nav-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.nav-link {
+  padding: 24px 0;
+  display: block;
+}
+
 .nav-link:hover,
 .nav-link:focus {
   color: #404bbf;
 }
+
 /* #region Logo*/
 .logo {
+  margin-right: 76px;
   font-family: "Raleway", sans-serif;
   font-weight: 700;
   text-transform: uppercase;
@@ -53,21 +96,35 @@ button {
   letter-spacing: 0.03em;
   color: #4d5ae5;
 }
+
 .logo-span {
   color: #2e2f42;
   letter-spacing: 0.03em;
 }
 
 /* #region Address*/
+.address-header {
+  margin-left: auto;
+}
+
+.address-list {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
 .address-link {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
+  padding: 24px 0;
 }
+
 .address-link:hover,
 .address-link:focus {
   color: #404bbf;
 }
+
 /* #region Hero*/
 .hero {
   background-color: #2e2f42;
@@ -115,6 +172,7 @@ button {
 .section-team {
   background-color: #f4f4fd;
 }
+
 .title-team {
   color: #2e2f42;
   font-weight: 500;
@@ -124,9 +182,11 @@ button {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
-.team-card {
+
+.team-item {
   background-color: #ffffff;
 }
+
 .team-name {
   background-color: #ffffff;
   color: #2e2f42;
@@ -135,12 +195,14 @@ button {
   line-height: 1.2;
   letter-spacing: 0.02em;
 }
+
 .team-profession {
   background-color: #ffffff;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #434455;
 }
+
 /* #region Portfolio*/
 .title-portfolio {
   color: #2e2f42;
