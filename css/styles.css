@@ -45,11 +45,16 @@ button {
   cursor: pointer;
 }
 
-/* #Container*/
+/* #Container and section*/
 .container {
   max-width: 1158px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 /* #region Page-header*/
