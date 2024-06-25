@@ -227,7 +227,7 @@ img {
 }
 
 /* #region Our-team*/
-.section > .container {
+.section-team .container {
   padding: 32px 0;
 }
 
@@ -280,7 +280,7 @@ img {
 }
 
 /* #region Portfolio*/
-.section > .container {
+.section-portfolio .container {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
 }
