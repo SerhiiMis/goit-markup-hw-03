@@ -313,7 +313,7 @@ img {
   margin: 0;
 }
 
-.portfolio-item {
+ul .portfolio-item {
   background-color: #ffffff;
   width: calc((100% - 48px) / 3);
 }
